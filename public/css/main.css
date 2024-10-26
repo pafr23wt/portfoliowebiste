@@ -1,0 +1,350 @@
+/**
+ * STYLING FOR HOMEPAGE
+ *
+ * @format
+ */
+/* ==============================
+   STYLING FOR SKILLS AND CODES-PAGE
+   ============================== */
+ul.skills {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul.skills li {
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: #f0f0f0;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+ul.skills li:hover {
+  background-color: #e0e0e0;
+}
+/* ==============================
+   STYLING FOR ABOUT-PAGE
+   ============================== */
+#cvpage {
+  display: flex;
+  align-items: flex-start;
+  gap: 30px;
+  padding: 30px;
+}
+
+#cvpage img {
+  max-width: 300px;
+  width: 100%;
+  height: auto;
+}
+
+#topofcv {
+  padding-top: 100px;
+}
+
+.headercv {
+  color: #0056b3;
+}
+
+/* ==============================
+   STYLING FOR BUTTONS
+   ============================== */
+.button {
+  padding: 10px 30px;
+  font-size: 16px;
+  color: white;
+  background-color: #ffa500;
+  border: none;
+  border-radius: 8px;
+  text-align: center;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+}
+
+.button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* ==============================
+     STYLING FOR TEXT CONTENT
+     ============================== */
+.textcontent {
+  padding: 30px;
+  margin: 0 auto;
+  padding-bottom: 100px;
+}
+
+/* ==============================
+     STYLING FOR IMAGES
+     ============================== */
+.cvpic,
+.projectpic,
+.styled-image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  display: block;
+  margin: 0 auto;
+}
+
+.divimage {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 20px 0;
+}
+
+.divimage img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* ==============================
+     STYLING FOR ABOUT PAGE
+     ============================== */
+.about-container {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-top: 50px;
+}
+
+.profile-img {
+  width: 33%;
+  height: auto;
+  object-fit: cover;
+  padding-top: 30px;
+}
+
+.text-container {
+  width: 60%;
+  margin-right: 20px;
+}
+
+.about-title {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.contact-title {
+  font-size: 1.5em;
+  margin: 20px 0 5px;
+}
+
+/* ==============================
+     STYLING FOR MAIN MENU
+     ============================== */
+.main-menu {
+  background-color: #333;
+  padding: 10px 20px;
+}
+
+.main-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.main-menu li {
+  margin: 0 15px;
+}
+
+.main-menu a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.main-menu a:hover {
+  text-decoration: underline;
+  color: #ffa500;
+}
+
+/* Additional styles for the login/logout area */
+#menulogin,
+#menulogout {
+  margin-left: auto;
+}
+
+/* ==============================
+     STYLING FOR IMAGES IN CONTAINER
+     ============================== */
+.image-container {
+  display: flex;
+  gap: 10px;
+}
+
+.smallimage {
+  width: 50%;
+  height: auto;
+}
+
+/* ==============================
+     STYLING FOR LIST ITEMS
+     ============================== */
+li {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 50px 0;
+  padding: 5px;
+}
+
+/* ==============================
+     STYLING FOR FOOTER
+     ============================== */
+footer {
+  background-color: whitesmoke;
+  color: black;
+  padding: 20px;
+  margin-top: 300px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 70px;
+  padding-left: 100px;
+  padding-top: 70px;
+}
+
+.footer-column {
+  flex: 1;
+  text-align: center;
+}
+
+.footer-column p {
+  margin: 5px 0;
+}
+
+.foot-text {
+  text-align: left;
+  line-height: 1.6;
+}
+
+.foot-head {
+  font-weight: bolder;
+  text-align: left;
+  text-decoration: underline;
+}
+
+#foot {
+  font-weight: bolder;
+}
+
+/* ==============================
+     STYLING FOR PROJECTS
+     ============================== */
+.project-container {
+  display: flex;
+  margin-bottom: 10px;
+  border: 2px solid #ccc;
+  background-color: #f9f9f9;
+}
+.project-details {
+  flex-grow: 1;
+}
+.project-container a {
+  height: 40px;
+  text-decoration: none;
+  color: black;
+}
+.spacing {
+  margin-bottom: 10px;
+}
+
+/* ==============================
+     STYLING FOR PRINCIPAL SECTION
+     ============================== */
+#principal {
+  padding: 40px;
+}
+
+/* ==============================
+     STYLING FOR FORMS
+     ============================== */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input,
+#projtype {
+  height: 40px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 10px;
+  font-size: 16px;
+}
+
+label {
+  margin: 10px 0 5px;
+  font-weight: bold;
+}
+
+.projnames {
+  text-align: center;
+  font-size: 60px;
+}
+.projinfo {
+  text-align: center;
+  font-size: 20px;
+  color: black;
+  margin-top: 20px;
+  line-height: 1.5;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+}
+
+/* ==============================
+     STYLING FOR RESPONSIVENESS
+     ============================== */
+
+/* Adding media queries to make the page responsive */
+@media (max-width: 768px) {
+  #principal {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  #principal img {
+    max-width: 100%;
+  }
+
+  /* Main menu styles for responsiveness */
+  .main-menu ul {
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+  }
+
+  .main-menu li {
+    margin: 10px 0;
+  }
+
+  .main-menu a {
+    padding: 10px 15px;
+    font-size: 1.2em;
+  }
+
+  /* Footer styles for responsiveness */
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-column {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .footer-column p {
+    margin: 5px 0;
+  }
+}

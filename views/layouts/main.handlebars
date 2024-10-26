@@ -1,0 +1,62 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/main.css" />
+    <title>Frida Palm Portfolio-Website</title>
+  </head>
+  <body>
+    <header>
+      <nav class="main-menu">
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/contact">Contact</a></li>
+          <li><a href="/projects">Design Projects</a></li>
+          <li><a href="/codes">Coding</a></li>
+          <li><a href="/cv">About</a></li>
+          <li><a href="/skills">Skills</a></li>
+
+          {{#if isLoggedIn}}
+            <li id="menulogout">Hi, {{name}} - <a href="/logout">Logout</a></li>
+          {{else}}
+            <li id="menulogin"><a href="/login">Login</a></li>
+          {{/if}}
+        </ul>
+      </nav>
+    </header>
+
+    {{{body}}}
+
+    <footer>
+      <div class="footer-container">
+        <div class="footer-column">
+          <p class="foot-head">Design Skills</p>
+          <p class="foot-text">Figma</p>
+          <p class="foot-text">UX Design</p>
+          <p class="foot-text">Adobe Design Programs</p>
+          <p class="foot-text">Visual Communication</p>
+          <p class="foot-text">Design Systems</p>
+        </div>
+
+        <div class="footer-column">
+          <p class="foot-head">Coding Skills</p>
+          <p class="foot-text">HTML5</p>
+          <p class="foot-text">CSS</p>
+          <p class="foot-text">JavaScript</p>
+          <p class="foot-text">Node.js</p>
+          <p class="foot-text">Express, Handlebars</p>
+        </div>
+
+        <div class="footer-column">
+          <p class="foot-head">Contact information</p>
+          <p class="foot-text">Email: fridaapalm@gmail.com</p>
+          <p class="foot-text">Linkedin: Frida Palm</p>
+          <p class="foot-text">Telephone: 070 70 707 07</p>
+        </div>
+      </div>
+
+      <p id="foot">&copy; Frida Palm</p>
+    </footer>
+
+  </body>
+</html>

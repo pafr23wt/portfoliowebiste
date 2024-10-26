@@ -1,0 +1,26 @@
+{
+  "name": "project-webdevelopment",
+  "version": "1.0.0",
+  "description": "My project within course TGWK12-Web Development Fundamentals, JU 2024",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Node",
+    "express",
+    "handlebars",
+    "SQLite3"
+  ],
+  "author": "Frida-Palm",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "connect-sqlite3": "^0.9.15",
+    "express": "^4.21.1",
+    "express-handlebars": "^8.0.1",
+    "express-session": "^1.18.0",
+    "handlebars": "^4.7.8",
+    "sqlite3": "^5.1.7"
+  }
+}

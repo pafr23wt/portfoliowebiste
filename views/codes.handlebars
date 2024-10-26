@@ -1,0 +1,22 @@
+<div id="principal">
+  <h1>Coding Projects</h1>
+    <div class="mytextcard">
+
+  <div>
+    <ul class="skills">
+      {{#each codes}}
+        <li>
+          {{#if (eq type "Coding")}}
+            <span></span>
+          {{else}}
+            <span></span>
+          {{/if}}
+          {{cyear}} //  
+        {{cname}}  -
+          {{cdesc}} <br> 
+                    <a href={{curl}} target="_blank">{{curl}}</a> <!-- Make the URL clickable -->
+      {{/each}}
+    </ul>
+  </div>
+</div>
+</div>

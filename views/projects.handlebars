@@ -1,0 +1,27 @@
+
+<div id="principal">
+  <img class="projectpic" src="img/projects2.jpg" alt="picture or projectsite" />
+
+  <div>
+    <ul>
+      {{#each projects}}
+<li class="project-container">
+    <div class="project-details">
+          <a href="/projects/{{id}}">{{name}}, {{year}},
+            </div>
+          {{#if ../session.isAdmin}}
+            <div class="project-actions">
+          <a href="/projects/modify/{{id}}" class="modify">modify</a> 
+          <a href="/projects/delete/{{id}}" class="delete">delete</a>
+            </div>
+          {{/if}}
+        </li>
+      {{/each}}
+    </ul>
+      {{#if session.isAdmin}}
+        <div class="spacing"></div> 
+
+  <div><a class="button" href="/project/new">New project</a></div>
+  {{/if}}
+  </div>
+</div>

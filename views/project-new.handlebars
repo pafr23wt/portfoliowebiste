@@ -1,0 +1,50 @@
+<div id="principal">
+  {{#if project.id}} <h1>Modify project</h1> {{else}}
+    <h1>New project</h1>
+  {{/if}}
+
+  <div class="mytextcard">
+    {{#if project.id}}
+    <form action="/projects/modify/{{project.id}}" method="post">
+    {{else}}
+    <form action="/project/new" method="post">
+    {{/if}}
+      <label for="projname">Name:</label>
+      <input type="text" id="projname" name="projname" required="required" /><br
+      {{#if project.name}} value="{{project.name}}" {{/if}}
+      ><br />
+
+      <label for="projyear">Year</label>
+      <input
+        type="number"
+        id="projyear"
+        name="projyear"
+        min="1990"
+        max="2050"
+        required="required"
+        {{#if project.year}} value="{{project.year}}" {{/if}}
+      /><br />
+      <label for="projdesc">Description</label>
+      <textarea d="projdesc" name="projdesc" required="required" id="projtype"></textarea>
+      <br />
+
+      <label for="projtype">Type</label>
+      <select name="projtype" id="projtype">
+        <option value="Design" {{#if (eq project.type "Design")}}selected="selected"{{/if}}>Design</option>
+        <option value="Coding" {{#if (eq project.type "Coding")}}selected="selected"{{/if}}>Coding</option>
+        <option value="Prototype" {{#if (eq project.type "Prototype")}}selected="selected"{{/if}}>Prototype</option>
+      </select><br />
+
+      <label for="projurl">URL</label>
+      <input
+        type="text"
+        id="projurl"
+        name="projurl"
+        placeholder="/img/..."
+        required="required"
+        {{#if project.imgURL}} value="{{project.imgURL}}" {{/if}}
+      /><br />
+      <input class="button" type="submit" value={{#if project.id}}"Modify project"{{else}}"Create new project"{{/if}} />
+    </form>
+  </div>
+</div>
